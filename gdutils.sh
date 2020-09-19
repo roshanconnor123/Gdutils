@@ -33,10 +33,10 @@ copy() {
   
   case "$option" in
   A)
-      node --max-old-space-size=512 copy $SRC $DST -S
+      node --max-old-space-size=512 copy $SRC $DST
 	  ;;
   B)
-      node --max-old-space-size=512 copy $SRC $DST -S -D
+      node --max-old-space-size=512 copy $SRC $DST -D
       ;;
   *)
       echo
@@ -60,14 +60,14 @@ count() {
   
   case "$option" in
   A)
-      node count $SRC -S
+      node count $SRC 
 	  ;;
   B)
-      node count $SRC -S -t tree -o /sdcard/Tree.html
+      node count $SRC  -t tree -o /app/Tree.html
       echo " Check your Internal storage to find a file called Tree.html"
       ;;
   C) 
-      node count $SRC -S -t snap -o /sdcard/Index.html
+      node count $SRC  -t snap -o /app/Index.html
       echo "Check your Internal Storag to find a file called Index.html"
       ;;	  
   *)
