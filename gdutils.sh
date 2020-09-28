@@ -19,10 +19,10 @@ PURPLE="${COLOR}1;35m"
 # ★★★Copy from source to destination★★★
 copy() {
   cd ~ && cd gd-utils
-  echo "${RED}Remember to add your SAs as Viewer in source TD and as a Contributor in Destination TD${NORMAL}"
-  echo "Provide Folder ID"
+  echo "${RED}Will work with Shared Drives${NORMAL}"
+  echo "Provide Source Folder ID"
   read SRC
-  echo "Provide Folder ID"
+  echo "Provide Destination Folder ID"
   read DST
   echo "${RED}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NORMAL}"
   echo && echo "Copy mode selected
@@ -47,7 +47,7 @@ copy() {
 # ★★★Calculate the size★★★
 count() {
   cd ~ && cd gd-utils
-  echo "${RED}Remember to add your SAs as Viewer (atleast) in source TD${NORMAL}"
+  echo "${RED}Will work with Shared Drives${NORMAL}"
   echo "Provide Folder ID"
   read SRC
   echo "${RED}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NORMAL}"
@@ -63,12 +63,12 @@ count() {
       node count $SRC 
 	  ;;
   B)
-      node count $SRC  -t tree -o /app/Tree.html
+      node count $SRC  -t tree -o /app/gd-utils/DriveIndex.html
       echo " Check your Internal storage to find a file called Tree.html"
       ;;
   C) 
-      node count $SRC  -t snap -o /app/Index.html
-      echo "Check your Internal Storag to find a file called Index.html"
+      node count $SRC  -t snap -o /app/gd-utils/DriveIndex(snap).html
+      echo "Check your Internal Storage to find a file called Index.html"
       ;;	  
   *)
       echo
