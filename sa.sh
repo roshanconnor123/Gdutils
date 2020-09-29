@@ -30,9 +30,11 @@ cecho() {
   read username
   echo "Provide github password"
   read Password
+  echo "Provide ServiceAccounts Repo Name"
+  read repo
   cd ~
-  git clone https://"$username":"$Password"@github.com/"$username"/accounts
-  cp accounts/*.json gd-utils/sa/
+  git clone https://"$username":"$Password"@github.com/"$username"/"$repo"
+  cp "$repo"/*.json gd-utils/sa/
   cecho b "Service accounts are added to Gdutils"
   exit
  
