@@ -2,7 +2,7 @@
 
  Gd-Utils is just another tool which helps in bypassing the 750GB daily transfer limit by Google.
 
-:octocat: This fork is an English version of Gd-Utils by @iwestlin
+:octocat: This fork is an English version of Gd-Utils by [@iwestlin](https://github.com/iwestlin)
 
     https://github.com/iwestlin/gd-utils
 
