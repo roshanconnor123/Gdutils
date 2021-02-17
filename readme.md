@@ -54,7 +54,7 @@ npm install --unsafe-perm=true --allow-root
 🌠 Go to `sa` Folder inside `Gd-utils` folder and paste all the .json files there
 
 
-### 🔳 Installation on Android
+### 🔳 Android
 
 
 🌠 Install [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_IN%20%20) - Remember to enable Storage Permission by going to Settings.
@@ -72,7 +72,7 @@ git clone https://github.com/roshanconnor123/gd-utils && cd gd-utils && npm inst
 bash sa.sh
 ```
 
-### 🔳 Installation on GNU/Linux
+### 🔳 GNU/Linux
 
 🌠 Installing the dependancies and Gdutils
 ```bash
