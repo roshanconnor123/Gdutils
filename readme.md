@@ -1,87 +1,87 @@
 # Gd-Utils
 
- Gd-Utils is just another Tool which helps us to Bypass the 750GB daily limit by google
+ Gd-Utils is just another tool which helps in bypassing the 750GB daily transfer limit by Google.
 
-:octocat: This Fork is an English version of the Gd-Utils by 
+:octocat: This fork is an English version of Gd-Utils by [@iwestlin](https://github.com/iwestlin)
 
     https://github.com/iwestlin/gd-utils
 
-:octocat: All I did is edit the code and used google translate to change chinese to English..so all Credits to the OP
+:octocat: All I have done is to edit the code and use Google Translate to translate Chinese to English. So all credits to the OP.
 
-:octocat: I included only the Installation part for running in your system ([Telegram Bot part is here](https://github.com/roshanconnor123/Gdutils_Tgbot))
+:octocat: I have only included the installation part for running `Gd-Utils` on your system ([Telegram Bot part is here](https://github.com/roshanconnor123/Gdutils_Tgbot))
 ## General Instructions
-Like Other Tools (Autorclone/Folderclone/Gclone/Fclone)  Gd-Utils is also based upon Service accounts aka SAs
+Like other tools (Autorclone/Folderclone/Gclone/Fclone)  Gd-Utils is also based upon Service Accounts aka SAs.
 
- Among These tools Only Autorclone & Folderclone can generate SAs by themselves
+ Among these tools only `Autorclone` and `Folderclone` can generate SAs by themselves.
  
->So for this tool to work you need SAs generated using [Autorclone](https://github.com/xyou365/AutoRclone) or [Folderclone](https://github.com/Spazzlo/folderclone)
+>Therefore for this tool to work you need SAs generated using either [Autorclone](https://github.com/xyou365/AutoRclone) or [Folderclone](https://github.com/Spazzlo/folderclone)
 
-### 📦 Pre Requisites:
+### 📦 Pre-Requisites:
 
-📣 This tool can be used in **Windows** , **Android** as well as **Linux OS**
+This tool can be used on **Microsoft Windows**, **Android** and **GNU/Linux**.
 
-📣 You need Generated **SAs** (Like I mentioned above)
+📣 You will need already generated **SAs**.
 
-📣 If you are using this in **Linux** or **Android** :-
+📣 If you are using this on **GNU/Linux** or **Android**:-
 
-Create a new Repo in Github and name it as `accounts` and Upload all your SAs (json files) there
+Create a new repository on Github and name it as `accounts` then upload all your SAs (.json files) there.
 
-[Follow this to understand better](https://telegra.ph/Uploading-Service-Accounts-to-Github-07-09)
+[Follow this guide to understand better](https://telegra.ph/Uploading-Service-Accounts-to-Github-07-09)
 
 ## Installation
 
-### 🔳Installation in Windows
+### 🔳 Windows
 
 
-🌠 Install Nodejs in windows
+🌠 Install Node.js on Windows
 
- Install [Nodejs](https://nodejs.org/dist/v12.18.4/node-v12.18.4-x64.msi) and Make Sure to Install additional components(Tick mark the Option saying Install Additional components)
+ Install [Node.js](https://nodejs.org/dist/v12.18.4/node-v12.18.4-x64.msi) and make sure to install additional components (tick mark the option saying `Install Additional Components`).
 
-It is very important to  install the addtional components (of nodejs) as well for this tool to work
+It is essential to install the addtional components of Node.js for this tool to work.
 
-🌠 Create a new Folder in Desktop and Name it as `Gd-utils`
+🌠 Create a new folder onto `Desktop` and name it as `Gd-utils`.
 
-🌠 [Download this](https://github.com/roshanconnor123/gd-utils/archive/master.zip) and Extract it - copy all the contents to newly created `Gd-utils Folder` in your Desktop
+🌠 [Download this](https://github.com/roshanconnor123/gd-utils/archive/master.zip) and extract it - copy all the contents to newly created `Gd-utils Folder` in your Desktop.
 
-🌠 Open cmd inside `Gd-utils` Folder and type this
+🌠 Open cmd inside `Gd-utils` folder and enter this command
 ```
 npm install --unsafe-perm=true --allow-root
 ```
- If it shows `0 vulnerabilities` it means that installation is successful
+ If it shows `0 vulnerabilities`, it means that the installation was successful.
 
-🌠 Go to Autorclone/folderclone Folder In your PC and Open Accounts Folder - Copy all the json files
+🌠 Go to Autorclone/Folderclone folder on your PC and open `Accounts` Folder - Copy all the .json files.
 
-🌠 Go to `sa` Folder inside `Gd-utils` Folder and Paste all the json files there
-
-
-### 🔳 Installation in Android
+🌠 Go to `sa` Folder inside `Gd-utils` folder and paste all the .json files there
 
 
-🌠 Install [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_IN%20%20) - Remember to enable Storage Permission by going to settings
+### 🔳 Android
 
-🌠 Install Nodejs & Python & Git In Termux
+
+🌠 Install [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_IN%20%20) - Remember to enable Storage Permission by going to Settings.
+
+🌠 Install Node.js, Python & Git with Termux
 ```
 pkg install python && pkg install git && pkg install nodejs
 ```
-🌠 Installing Gd-utils
+🌠 Install Gd-utils
 ```
 git clone https://github.com/roshanconnor123/gd-utils && cd gd-utils && npm install --unsafe-perm=true --allow-root
 ```
-🌠 Downloading Service accounts from your github and configuring it for Gdutils
+🌠 Download Service Accounts from your Github repository and configue them for Gdutils
 ```
 bash sa.sh
 ```
 
-### 🔳 Installation in Linux
+### 🔳 GNU/Linux
 
-🌠 Intsalling the Dependancies and Gdutils
+🌠 Installing the dependancies and Gdutils
 ```bash
 sudo apt-get install build-essential && sudo apt-get update && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && sudo apt-get install -y nodejs && git clone https://github.com/roshanconnor123/gd-utils
 ```
 ```bash
 cd gd-utils && npm install --unsafe-perm=true --allow-root
 ```
-🌠 Downloading Service accounts from your github and configuring it for Gdutils
+🌠 Download the Service Accounts from your Github repository and configure them for Gdutils
 ```bash
 bash sa.sh
 ```
@@ -89,17 +89,17 @@ bash sa.sh
 ## Usage
 🔷 Windows
 
- Double Click on **gdutils.bat** File (In Gd-utils Folder)
+ Double click on **gdutils.bat** file (In Gd-utils folder)
 
 🔷 Android
 
- Just run the code below in **Termux**
+Run the following command in **Termux**
 ```bash
 cd gd-utils && bash gdutils.sh
 ```
-🔷 Linux
+🔷 GNU/Linux
 
- Just run the code below in **Terminal**
+ Run the following command in **Terminal**
 ```bash
 cd gd-utils && bash gdutils.sh
 ```
@@ -108,4 +108,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licenced under the [MIT](https://choosealicense.com/licenses/mit/) licence.
